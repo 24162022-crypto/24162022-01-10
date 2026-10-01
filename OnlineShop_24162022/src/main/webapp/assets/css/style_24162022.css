@@ -1,0 +1,74 @@
+* { box-sizing: border-box; }
+body { font-family: Arial, Helvetica, sans-serif; margin: 0; background: #f5f6fa; color: #222; }
+
+.site-header { background: #2c3e50; color: #fff; }
+.header-inner { max-width: 1100px; margin: 0 auto; padding: 12px 20px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+.brand { color: #fff; font-weight: bold; font-size: 20px; text-decoration: none; }
+.main-nav a, .main-nav span { color: #ecf0f1; margin-left: 18px; text-decoration: none; }
+.main-nav a:hover { text-decoration: underline; }
+.admin-link { color: #f1c40f !important; font-weight: bold; }
+
+.content { max-width: 1100px; margin: 20px auto; padding: 0 20px; min-height: 60vh; }
+
+.site-footer { background: #1c2733; color: #bbb; text-align: center; padding: 14px; margin-top: 40px; }
+
+.card { background: #fff; border-radius: 8px; padding: 16px; box-shadow: 0 1px 4px rgba(0,0,0,.1); margin-bottom: 16px; }
+
+.admin-layout { display: flex; max-width: 1100px; margin: 20px auto; gap: 20px; padding: 0 20px; }
+.admin-sidebar { width: 220px; background: #fff; padding: 16px; border-radius: 8px; height: fit-content; }
+.admin-sidebar ul { list-style: none; padding: 0; }
+.admin-sidebar li { margin-bottom: 10px; }
+.admin-content { flex: 1; }
+
+.btn { display: inline-block; padding: 6px 12px; background: #2c3e50; color: #fff; text-decoration: none; border-radius: 4px; font-size: 13px; border: none; cursor: pointer; }
+.btn-secondary { background: #7f8c8d; }
+
+.auth-card { max-width: 420px; margin: 30px auto; }
+.form-group { margin-bottom: 14px; }
+.form-group label { display: block; margin-bottom: 4px; font-size: 14px; font-weight: bold; }
+.form-group input { width: 100%; padding: 8px 10px; border: 1px solid #ccc; border-radius: 4px; font-size: 14px; }
+
+.alert { padding: 10px 14px; border-radius: 4px; margin-bottom: 14px; font-size: 14px; }
+.alert-error { background: #fdecea; color: #c0392b; border: 1px solid #f5c6cb; }
+.alert-success { background: #eafaf1; color: #1e8449; border: 1px solid #c3e6cb; }
+
+.btn-danger { background: #c0392b; }
+.muted { color: #7f8c8d; font-size: 13px; font-weight: normal; }
+.form-group select { width: 100%; padding: 8px 10px; border: 1px solid #ccc; border-radius: 4px; font-size: 14px; }
+.form-card { max-width: 560px; }
+
+/* Cau 3/4 - bang san pham theo mau de thi */
+.product-table { width: 100%; border-collapse: collapse; background: #fff; margin-bottom: 20px; }
+.product-table th, .product-table td { border: 1px solid #555; padding: 8px 12px; text-align: left; vertical-align: top; }
+.product-table th { background: #ecf0f1; }
+.product-table .img-cell { width: 180px; text-align: center; }
+.product-table .info-cell div { margin-bottom: 4px; }
+.product-img { width: 150px; height: 150px; object-fit: cover; border-radius: 4px; }
+
+/* Cau 5 - bang quan tri + phan trang */
+.toolbar { display: flex; justify-content: space-between; align-items: center; }
+.data-table { width: 100%; border-collapse: collapse; background: #fff; font-size: 14px; }
+.data-table th, .data-table td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+.data-table th { background: #2c3e50; color: #fff; }
+.data-table .actions { white-space: nowrap; }
+.data-table .actions form { display: inline; }
+.data-table .thumb .product-img { width: 48px; height: 48px; }
+.pagination { margin: 16px 0 6px; }
+.pagination a, .pagination span { display: inline-block; padding: 5px 10px; margin-right: 4px; border: 1px solid #2c3e50; border-radius: 4px; text-decoration: none; color: #2c3e50; font-size: 13px; }
+.pagination .active { background: #2c3e50; color: #fff; }
+.pagination .disabled { border-color: #ccc; color: #aaa; }
+
+/* Gio hang + Thanh toan COD */
+.btn-checkout { background: #27ae60; }
+.inline-form { display: inline; }
+.qty-input { width: 70px; padding: 5px 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 14px; }
+.add-cart-form { margin: 10px 0 16px; }
+.add-cart-form label { margin-right: 8px; font-weight: bold; font-size: 14px; }
+.cart-table .num, .data-table .num { text-align: right; white-space: nowrap; }
+.cart-table td { vertical-align: middle; }
+.cart-table .total-row td { background: #f8f9fa; }
+.cart-warn { color: #c0392b; font-size: 13px; margin-top: 4px; }
+.cart-actions { margin: 16px 0; display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+.radio-row { display: block; font-weight: normal !important; margin-bottom: 6px; }
+.radio-row.disabled { color: #999; }
+.form-group .radio-row input { width: auto; margin-right: 6px; }

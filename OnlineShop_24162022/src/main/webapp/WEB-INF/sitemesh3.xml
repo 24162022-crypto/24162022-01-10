@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemesh>
+    <!-- decorator-prefix mac dinh cua SiteMesh 3 la "/WEB-INF/decorators/",
+         nen o day CHI ghi ten file, khong ghi lai full path (neu khong se bi
+         loi noi duong dan nhu "/WEB-INF/decorators/WEB-INF/decorators/xxx.jsp not found") -->
+
+    <!-- Khu vuc quan tri /admin/* dung layout rieng (phai khai bao TRUOC /*) -->
+    <mapping path="/admin/*" decorator="admin_layout.jsp"/>
+
+    <!-- Cac trang con lai (khach/User) dung layout mac dinh -->
+    <mapping path="/*" decorator="user_layout.jsp"/>
+</sitemesh>
